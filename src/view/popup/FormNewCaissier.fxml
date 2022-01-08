@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<DialogPane fx:id="dialogPane" prefHeight="185.0" prefWidth="341.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewCaissierController">
+   <content>
+      <AnchorPane prefHeight="201.0" prefWidth="341.0">
+         <children>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="215.0" prefWidth="311.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="42.0" prefWidth="311.0" style="-fx-background-color: #243640;">
+                     <children>
+                        <FontAwesomeIcon iconName="USER" size="1.3em">
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIcon>
+                        <Label alignment="CENTER" style="-fx-text-fill: #ffffff; -fx-font-size: 16px;" text="DONNEES CAISSIER" />
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" prefWidth="311.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <TextField fx:id="txtTempsMoyen" prefHeight="25.0" prefWidth="175.0" promptText="temps moyen de service ( MIN )">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Button fx:id="btnSaveCaissier" mnemonicParsing="false" onAction="#NewCaissier" prefWidth="100.0" style="-fx-background-color: #3fa23c; -fx-text-fill: #ffffff;" text="Enregistrer">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="25.0" left="25.0" right="25.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </content>
+</DialogPane>
